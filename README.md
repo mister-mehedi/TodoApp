@@ -1,10 +1,10 @@
-## An oop focused Todo Application
+# An oop focused Todo Application
 
-# OOP:
+## OOP:
 1. Encapsulation
 2. Polymorphism
 
-# Features:
+## Features:
 1. Add
 2. Delete
 3. View
@@ -12,9 +12,9 @@
 5. Sorting
 6. Completed task.
 
-# STL:
+## STL:
 1. Set // binary search
 2. sort() // introsort algorithm
 
-# Others:
+## Others:
 1. operator overloading (comparator function)
