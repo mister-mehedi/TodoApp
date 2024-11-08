@@ -25,8 +25,10 @@ int main(){
         cout << "\nTodo App Menu:\n";
         cout << "1. Add Task\n";
         cout << "2. Remove Task\n";
+        cout << "3. Mark Task as Complete\n";
         cout << "4. List Tasks\n";
-        cout << "5. Exit\n";
+        cout << "5. Update Task\n";
+        cout << "6. Exit\n";
 
         cout << "Enter your choice: ";
         cin>>choice;
@@ -45,16 +47,28 @@ int main(){
             getline(cin,title);
             todoApp.remmoveTask(title);
             break;
+            case 3:
+              cout << "Enter task title to mark as complete: ";
+              getline(cin,title);
+              todoApp.markTaskCompleted(title);
+              break;
         case 4:
             todoApp.listTasks();
             break;
-        case 5:
+          case 5:
+            cout << "Enter task title to update: ";
+            getline(cin,title);
+            cout << "Enter updated task description: ";
+            getline(cin,description);
+            todoApp.updateTask(title,description);
+            break;
+        case 6:
             cout << "Exiting...\n";
             break;
         default:
             cout << "Invalid choice. Please choose again.\n";
         }
-    }while(choice!=5);
+    }while(choice!=6);
 
     return 0;
 }

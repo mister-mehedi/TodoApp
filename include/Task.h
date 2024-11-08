@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <utility>
 
 using namespace std;
 
@@ -17,20 +18,24 @@ class Task
     public:
 
         Task();
-        Task(const string& title, const string& description)
-            : title(title), description(description), completed(false) {}
+        Task(string  title, string  description)
+            : title(std::move(title)), description(std::move(description)), completed(false) {}
         //virtual ~Task();
 
         void markComplete(){
             completed=true;
         }
 
-        bool isCompleted(){
+        bool isCompleted() const{
             return completed;
         }
 
         string getTitle(){
             return title;
+        }
+
+        void setDescription(const string& des){
+          description=des;
         }
 
         void printTask(){

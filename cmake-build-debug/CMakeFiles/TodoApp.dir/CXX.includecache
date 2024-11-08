@@ -11,6 +11,8 @@ iostream
 -
 string
 -
+utility
+-
 
 ../include/TodoApp.h
 iostream
@@ -37,10 +39,6 @@ Task.h
 E:/Web-Projects/TodoApp/Task.h
 TodoApp.h
 E:/Web-Projects/TodoApp/TodoApp.h
-
-E:/Web-Projects/TodoApp/src/Task.cpp
-Task.h
-E:/Web-Projects/TodoApp/src/Task.h
 
 E:/Web-Projects/TodoApp/src/TodoApp.cpp
 TodoApp.h
