@@ -1,0 +1,26 @@
+# depslib dependency file v1.0
+1731044002 source:e:\web-projects\todoapp\main.cpp
+	<iostream>
+	<string>
+	<set>
+	<algorithm>
+	"Task.h"
+	"TodoApp.h"
+
+1731043468 e:\web-projects\todoapp\include\task.h
+	<iostream>
+	<string>
+
+1731037440 source:e:\web-projects\todoapp\src\task.cpp
+	"Task.h"
+
+1731037968 source:e:\web-projects\todoapp\src\todoapp.cpp
+	"TodoApp.h"
+
+1731044441 e:\web-projects\todoapp\include\todoapp.h
+	<iostream>
+	<string>
+	<set>
+	<algorithm>
+	"Task.h"
+
