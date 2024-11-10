@@ -1,5 +1,7 @@
 # **An oop focused Todo Application**
 
+Developed a Todo application utilizing core OOP principles, including encapsulation and operator overloading, for efficient task management. Key functions—add, delete, view (ascending/descending), search, update, and mark complete—are optimized with a set(stl) (binary search tree), achieving primarily O(logn) time complexity. Leveraged STL’s set for automatic sorting and implemented a custom comparator to enable descending views, showcasing compile-time polymorphism.
+
 ## OOP:
 1. Encapsulation
 2. Polymorphism (Operator overloading)
