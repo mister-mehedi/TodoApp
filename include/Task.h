@@ -10,6 +10,7 @@ using namespace std;
 
 class Task
 {
+
     private:
         string title;
         string description;
@@ -38,7 +39,7 @@ class Task
           description=des;
         }
 
-        void printTask(){
+        void printTask() const {
             cout<<(completed? "[y] ": "[n] ")<<title<<": "<<description<<endl;
         }
 

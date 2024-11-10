@@ -28,47 +28,59 @@ int main(){
         cout << "3. Mark Task as Complete\n";
         cout << "4. List Tasks\n";
         cout << "5. Update Task\n";
-        cout << "6. Exit\n";
+        cout << "6. Search Task\n";
+        cout << "7. Descending Sort Tasks\n";
+        cout << "8. Exit\n";
 
         cout << "Enter your choice: ";
         cin>>choice;
         cin.ignore();
 
         switch(choice){
-        case 1:
-            cout << "Enter task title: ";
-            getline(cin,title);
-            cout << "Enter task description: ";
-            getline(cin,description);
-            todoApp.addTask(title,description);
-            break;
-        case 2:
-            cout << "Enter task title to remove: ";
-            getline(cin,title);
-            todoApp.remmoveTask(title);
-            break;
+            case 1:
+              cout << "Enter task title: ";
+              getline(cin,title);
+              cout << "Enter task description: ";
+              getline(cin,description);
+              todoApp.addTask(title,description);
+              break;
+            case 2:
+              cout << "Enter task title to remove: ";
+              getline(cin,title);
+              todoApp.remmoveTask(title);
+              break;
             case 3:
               cout << "Enter task title to mark as complete: ";
               getline(cin,title);
               todoApp.markTaskCompleted(title);
               break;
-        case 4:
-            todoApp.listTasks();
-            break;
-          case 5:
-            cout << "Enter task title to update: ";
-            getline(cin,title);
-            cout << "Enter updated task description: ";
-            getline(cin,description);
-            todoApp.updateTask(title,description);
-            break;
-        case 6:
-            cout << "Exiting...\n";
-            break;
-        default:
-            cout << "Invalid choice. Please choose again.\n";
+            case 4:
+              todoApp.listTasks();
+              break;
+            case 5:
+              cout << "Enter task title to update: ";
+              getline(cin,title);
+              cout << "Enter updated task description: ";
+              getline(cin,description);
+              todoApp.updateTask(title,description);
+              break;
+
+            case 6:
+              cout << "Enter task title to search: ";
+              getline(cin,title);
+              todoApp.searchTask(title);
+              break;
+
+            case 7:
+              todoApp.descendingSort();
+              break;
+            case 8:
+              cout << "Exiting...\n";
+              break;
+            default:
+              cout << "Invalid choice. Please choose again.\n";
         }
-    }while(choice!=6);
+    }while(choice!=8);
 
     return 0;
 }

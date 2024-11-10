@@ -1,20 +1,26 @@
-# An oop focused Todo Application
+# **An oop focused Todo Application**
 
 ## OOP:
 1. Encapsulation
-2. Polymorphism
+2. Polymorphism (Operator overloading)
 
 ## Features:
-1. Add
-2. Delete
-3. View
-4. Search
-5. Sorting
-6. Completed task.
+1. Add-------------------O(logn)
+2. Delete----------------O(logn)
+3. View------------------O(n)
+   
+   3.1 Ascending
+   
+   3.2 Descending
+4. Search---------------O(logn)
+5. Update---------------O(logn)
+6. MarkTask------------O(logn)
+## _NB: Features operations-> Optimal in nature(binary search tree) //O(lgn)_
 
 ## STL:
-1. Set // binary search
-2. sort() // introsort algorithm
+1. Set -> binary search 
+   
+// _sort() -> introsort algorithm_(if needed)
 
 ## Others:
-1. operator overloading (comparator function)
+1. Comparator function (Compile Time Polymorphism)
